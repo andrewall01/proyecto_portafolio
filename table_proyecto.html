@@ -4,6 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tablas</title>
+    <style>
+        table {
+        width: 100%;
+      }
+      thead th {
+        background-color: green;
+        text-align: center;
+        padding: 20px;
+      }
+      tbody td {
+          background-color: cadetblue;
+          padding: 30px;
+          text-align: center;
+          font-size: 20px;
+          color:brown;
+      }
+      tfoot td {
+        background-color: blue;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <table>
@@ -24,7 +47,7 @@
       </tbody>
       <tfoot>
         <tr>
-          <td>Todos los derechos reservados</td>
+          <td colspan="4">Todos los derechos reservados</td>
         </tr>
       </tfoot>
     </table>
