@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas</title>
+    <style>
+        table {
+        width: 100%;
+      }
+      thead th {
+        background-color: green;
+        text-align: center;
+        padding: 20px;
+      }
+      tbody td {
+          background-color: cadetblue;
+          padding: 30px;
+          text-align: center;
+          font-size: 20px;
+          color:brown;
+      }
+      tfoot td {
+        background-color: blue;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>DNI</th>
+          <th>Teléfono</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2">Andres Llontop Espinoza</td>
+          <td>72429925</td>
+          <td>789654123</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">Todos los derechos reservados</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
