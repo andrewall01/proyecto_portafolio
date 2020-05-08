@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SELECTORS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: arial;
+            padding: 20px;
+            width: 100%;
+            max-width: 960px;
+            margin: auto;
+        }
+        /*Reglas globales*/
+        h2{
+            font-size: 18px;
+        }
+
+        section{
+            border: 1px solid #cdcdcd;
+            margin-bottom: 20px;
+            padding: 0 15px;
+        }
+
+        p{
+            font-size: 14px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+        /*banner*/
+        .banner{
+            background-color: green;
+        }
+
+        .banner h2{
+            color: white;
+        }
+
+        .banner p{
+            color: gold;
+
+        }
+
+        /*About*/
+
+        .about{
+            background: blueviolet;
+        }
+
+        .about h2{
+            color: red;
+        }
+
+        /*Servicios*/
+
+        .services{
+            background: brown;
+        }
+
+        .services h2{
+            color: white
+        }
+
+        ul > li{
+            border-top: 5px solid red;
+        }
+
+    </style>
+  </head>
+  <body>
+    <section class="banner">
+      <h2>Titulo de banner</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus
+          eum quaerat amet repudiandae dolorum a repellat ipsum totam
+          consequatur nihil aut, numquam, mollitia impedit at? Dicta provident
+          quod error.
+        </p>      
+    </section>
+    <section class="about">
+        <h2>Titulo de about</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus
+            eum quaerat amet repudiandae dolorum a repellat ipsum totam
+            consequatur nihil aut, numquam, mollitia impedit at? Dicta provident
+            quod error.
+          </p>
+      </section>
+      <section class="services">
+        <h2>Titulo de about</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus
+            eum quaerat amet repudiandae dolorum a repellat ipsum totam
+            consequatur nihil aut, numquam, mollitia impedit at? Dicta provident
+            quod error.
+          </p>
+      </section>
+  </body>
+</html>

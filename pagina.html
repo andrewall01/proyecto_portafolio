@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SELECTORS</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: segoe ui;
+        padding: 20px;
+        width: 100%;
+        max-width: 960px;
+        margin: auto;
+        background-color: brown;
+        margin-bottom: 20px;
+      }
+
+      /*Reglas globales*/
+
+      h1 {
+        text-align: center;
+        padding: 25px;
+        background-color: #001f57;
+        font-size: 40px;
+        margin-bottom: 5px;
+        color: cornsilk;
+      }
+
+      section {
+        margin-bottom: 5px;
+        padding: 15px 25px;
+      }
+
+      section:hover {
+        box-shadow: 0 0 10px white;
+      }
+
+      p {
+        text-align: justify;
+        line-height: 1.5;
+        font-size: 16px;
+      }
+
+      h2 {
+        font-size: 30px;
+        padding: 10px 0;
+      }
+
+      /*sobremi*/
+
+      .sobremi {
+        background-color: peru;
+      }
+
+      .sobremi h2 {
+        color: white;
+      }
+
+      /*Profesion*/
+
+      .profesion {
+        background-color: dimgrey;
+      }
+
+      .profesion h2 {
+        color: white;
+      }
+
+      /*Hobbies*/
+
+      .hobbies {
+        background-color: #00263b;
+      }
+
+      .hobbies h2 {
+        color: white;
+      }
+
+      img {
+        object-fit: cover;
+        width: 70%;
+        margin-left: 15%;
+      }
+
+      /*Contacto*/
+
+      .contacto {
+        background-color: #00a1ab;
+      }
+
+      .contacto h2 {
+        color: white;
+      }
+
+      .contacto input {
+        margin-left: 1%;
+        width: 48%;
+        padding: 15px;
+      }
+
+      .contacto textarea {
+        width: 97%;
+        margin-left: 1%;
+      }
+
+      .contacto button {
+        font-family: verdana;
+        background-color: #233451;
+        border: 1px solid #233451;
+        color: white;
+        padding: 15px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+      .contacto button:hover{
+        box-shadow: 0 0 10px white;
+      }
+
+      /*   
+            
+
+            .banner p {
+              color: gold;
+            }
+      */
+      /*About*/
+
+      /*  .about {
+              background: blueviolet;
+            }
+
+            .about h2 {
+              color: red;
+            }*/
+
+      /*Servicios*/
+
+      /*   .services {
+              background: brown;
+            }
+
+            .services h2 {
+              color: white;
+            }
+
+            ul > li {
+              border-top: 5px solid red;
+            }*/
+    </style>
+  </head>
+  <body>
+    <h1>Mi primera página Web</h1>
+    <section class="sobremi">
+      <h2>Sobre mí</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus
+        eum quaerat amet repudiandae dolorum a repellat ipsum totam consequatur
+        nihil aut, numquam, mollitia impedit at? Dicta provident quod error.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus
+        eum quaerat amet repudiandae dolorum a repellat ipsum totam consequatur
+        nihil aut, numquam, mollitia impedit at? Dicta provident quod error.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus
+        eum quaerat amet repudiandae dolorum a repellat ipsum totam consequatur
+        nihil aut, numquam, mollitia impedit at? Dicta provident quod error.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus
+        eum quaerat amet repudiandae dolorum a repellat ipsum totam consequatur
+        nihil aut, numquam, mollitia impedit at? Dicta provident quod error.
+      </p>
+    </section>
+    <section class="profesion">
+      <h2>Profesión</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus
+        eum quaerat amet repudiandae dolorum a repellat ipsum totam consequatur
+        nihil aut, numquam, mollitia impedit at? Dicta provident quod error.
+      </p>
+    </section>
+    <section class="hobbies">
+      <h2>Hobbies</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus
+        eum quaerat amet repudiandae dolorum a repellat ipsum totam consequatur
+        nihil aut, numquam, mollitia impedit at? Dicta provident quod error.
+      </p>
+      <br />
+      <img src="./imagenes/Andres_Llontop.jpg" alt="" />
+    </section>
+    <section class="contacto">
+      <h2>Contacto</h2>
+      <form action="">
+        <input type="text" placeholder="Nombres" />
+        <input type="text" placeholder="Apellidos" />
+        <br /><br />
+        <input type="tel" placeholder="Telefono" />
+        <input type="email" name="" id="" placeholder="Email" />
+        <br /><br />
+        <textarea name="" id="" cols="30" rows="10" placeholder="Descripción"></textarea>
+        <button>Enviar</button>
+      </form>
+    </section>
+  </body>
+</html>
