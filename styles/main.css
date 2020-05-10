@@ -1,22 +1,143 @@
+/*Globales*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+html{    
+    font-size: 62.5%;
+}
+main{
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+}
+
+body{    
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    font-size: 6.25rem;
+}
+
+h2{
+    text-align: center;    
+    font-size: 3.6rem;
+}
+
+/*codigo*/
+
+.codigo{
+    position: relative;    
+    
+}
+
+.codigo h1{
+    position: absolute;
+    top: 46px;
+    width: 100%;
+}
+
+.codigo img{
+    display: block;
+    width: 100%;
+}
+.codigo h2{
+    position: absolute;
+    bottom: 130px;
+    left: 52px;
+    padding: 24px 24px 24px 17px;
+    background-color: rgba(114, 153, 254, 0.5);
+    line-height: 1.2;
+    text-align: left;
+}
+
+
 /*skills*/
-.skills{
-    background-color: #7299FE;
+.skills {
+  background-color: #7299fe;
+  padding: 40px 104px 80px;
 }
 
-.servicios{
-    background-color: #FB7171;
-}
-
-.portafolio{
-    background-color: #FFD233;
-}
-
-.clientes{
-    background-color: #3F4E62;
-}
-
-.contacto{
-    background-color: #16A085;
+.skills h2{
+    text-align: center;
+    margin-bottom: 27px;
 }
 
 
+.skills .item{
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.skills .item:nth-child(odd){
+margin-right: -3px;
+padding-right: 12px;
+}
+
+.skills .item:nth-child(even){
+    padding-left: 12px;
+    }
+
+.skills .bar{
+    height: 17px;
+    background-color: white;
+}
+
+.skills .bar div{
+    height: 100%;
+    background-color: black;
+    width: 80%;
+}
+
+.skills h3{
+    margin-bottom: 8px;
+    font-size: 1.8rem;
+}
+
+.servicios {
+  background-color: #fb7171;
+}
+
+
+
+/*Portafolio*/
+
+.portafolio {
+  background-color: #ffd233;
+  text-align: center;  
+}
+
+.portafolio h2{
+    padding: 44px;
+}
+
+.portafolio div{
+    width: 100%;
+    margin-right: 179px;
+    text-align: center;
+  margin-bottom: 96px;
+    
+}
+
+.portafolio div img{
+    padding: 2px;
+}
+
+
+
+
+
+
+.clientes {
+  background-color: #3f4e62;
+}
+
+.contacto {
+  background-color: #16a085;
+}
