@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-<<<<<<< HEAD
 }
 html {
   font-size: 62.5%;
@@ -27,37 +26,10 @@ h1 {
 h2 {
   text-align: center;
   font-size: 3.6rem;
-=======
-
-}
-html{    
-    font-size: 62.5%;
-}
-main{
-    width: 100%;
-    max-width: 960px;
-    margin: auto;
-}
-
-body{    
-    font-family: 'Roboto', sans-serif;
-    color: white;
-}
-
-h1{
-    text-align: center;
-    font-size: 6.25rem;
-}
-
-h2{
-    text-align: center;    
-    font-size: 3.6rem;
->>>>>>> aa3bf70e4f6c03e53610705e9d091121acd57015
 }
 
 /*codigo*/
 
-<<<<<<< HEAD
 .codigo {
   position: relative;
 }
@@ -82,41 +54,12 @@ h2{
   text-align: left;
 }
 
-=======
-.codigo{
-    position: relative;    
-    
-}
-
-.codigo h1{
-    position: absolute;
-    top: 46px;
-    width: 100%;
-}
-
-.codigo img{
-    display: block;
-    width: 100%;
-}
-.codigo h2{
-    position: absolute;
-    bottom: 130px;
-    left: 52px;
-    padding: 24px 24px 24px 17px;
-    background-color: rgba(114, 153, 254, 0.5);
-    line-height: 1.2;
-    text-align: left;
-}
-
-
->>>>>>> aa3bf70e4f6c03e53610705e9d091121acd57015
 /*skills*/
 .skills {
   background-color: #7299fe;
   padding: 40px 104px 80px;
 }
 
-<<<<<<< HEAD
 .skills h2 {
   text-align: center;
   margin-bottom: 27px;
@@ -151,59 +94,16 @@ h2{
 .skills h3 {
   margin-bottom: 8px;
   font-size: 1.8rem;
-=======
-.skills h2{
-    text-align: center;
-    margin-bottom: 27px;
-}
-
-
-.skills .item{
-    display: inline-block;
-    width: 50%;
-    margin-bottom: 20px;
-}
-
-.skills .item:nth-child(odd){
-margin-right: -3px;
-padding-right: 12px;
-}
-
-.skills .item:nth-child(even){
-    padding-left: 12px;
-    }
-
-.skills .bar{
-    height: 17px;
-    background-color: white;
-}
-
-.skills .bar div{
-    height: 100%;
-    background-color: black;
-    width: 80%;
-}
-
-.skills h3{
-    margin-bottom: 8px;
-    font-size: 1.8rem;
->>>>>>> aa3bf70e4f6c03e53610705e9d091121acd57015
 }
 
 .servicios {
   background-color: #fb7171;
 }
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> aa3bf70e4f6c03e53610705e9d091121acd57015
 /*Portafolio*/
 
 .portafolio {
   background-color: #ffd233;
-<<<<<<< HEAD
   padding: 42px 0 96px 0;
 }
 
@@ -221,32 +121,6 @@ padding-right: 12px;
   padding-right: 11px;
 }
 
-=======
-  text-align: center;  
-}
-
-.portafolio h2{
-    padding: 44px;
-}
-
-.portafolio div{
-    width: 100%;
-    margin-right: 179px;
-    text-align: center;
-  margin-bottom: 96px;
-    
-}
-
-.portafolio div img{
-    padding: 2px;
-}
-
-
-
-
-
-
->>>>>>> aa3bf70e4f6c03e53610705e9d091121acd57015
 .clientes {
   background-color: #3f4e62;
 }
