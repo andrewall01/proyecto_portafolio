@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        select:focus, button:focus,button:focus{
+            outline: none;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="color"],
+        input[type="range"],
+        input[type="date"],
+        input[type="number"],
+        input[type="email"]{
+            padding: 10px;
+            width: 300px;
+            transition: all 0.5s;
+            border: 1px solid #cdcdcd;
+        }
+
+        input:focus, select:focus{
+            outline: none;
+        }
+
+        input:focus:invalid{
+            border: 1px solid red;
+            box-shadow: 0 0 10px red;
+        }
+        input:focus:valid, select:focus:valid{
+            border: 1px solid green;
+            box-shadow: 4px 5px 0px 0px red;
+        }
+        button{
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            cursor: pointer
+        }
+    </style>
+</head>
+<body>
+    <form method="GET">
+        <label>Nombre</label>
+        <hr>
+        <input name="name" type="text" placeholder="Ingresa tu nombre" required pattern="[A-Za-z]">
+        <br><br>
+        <label>Edad</label>
+        <hr>
+        <input min="18" max="40" name="age" type="number" placeholder="Ingresa tu edad" required>
+        <br><br>
+        <label>Elige tu país</label>
+        <hr>
+        <select name="country" id="">
+            <option value="0">--Seleccionar--</option>
+            <option value="peru">Peru</option>
+            <option value="argentina">Argentina</option>
+        </select>
+        <br><br>
+        <label>Elige tu sexo</label>
+        <hr>
+        <label for="f">F</label>
+        <input name="sex" id="f" type="radio" checked>
+        <label for="m">M</label>
+        <input name="sex" id="m" type="radio" checked>
+        <br><br>
+        <label>Elige tus hobbies</label>
+        <hr>
+        <label for="soccer">Futbol</label>
+        <input id="soccer" type="checkbox" checked>
+        <label for="voley">voley</label>
+        <input id="voley" type="checkbox">
+        <br><br>
+        <label>Contraseña</label>
+        <hr>
+        <input name="password" type="password" required>
+        <br><br>
+        <label>Color</label>
+        <hr>
+        <input name="color" type="color" required>
+        <br><br>
+        <label>Fechas</label>
+        <hr>
+        <input name="date" type="date" required>
+        <br><br>
+        <label>Correo</label>
+        <hr>
+        <input name="email" type="email" required>
+        <label>Rango</label>
+        <hr>
+        <input name="range" type="range" required>
+        <br><br>
+        <label>Ingresa una descripción</label>
+        <hr>
+        <textarea cols="188%" rows="20%"></textarea>
+        <hr>
+        <button name="enviar" type="submit">Enviar</button>
+    </form>
+    
+</body>
+</html>
