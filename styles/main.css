@@ -111,9 +111,9 @@ h2 {
   padding-bottom: 46px;
 }
 
-.portafolio div{
-    text-align: center;
-    margin: 0 16%;
+.portafolio div {
+  text-align: center;
+  margin: 0 16%;
 }
 
 .portafolio img {
@@ -121,9 +121,39 @@ h2 {
   padding-right: 11px;
 }
 
+/*Clientes*/
+
 .clientes {
   background-color: #3f4e62;
 }
+
+.clientes h2 {
+  padding: 36px 0 0px 0;
+  margin-bottom: 13px;
+}
+
+.clientes div {
+  text-align: center;
+  margin: auto;
+  padding-bottom: 60px;
+}
+
+.clientes img {
+    display: inline;
+    padding: 11px;
+}
+
+.clientes img:nth-child(1){
+    margin-left: 0px;
+}
+
+.clientes img:nth-child(4){
+    padding-right: 0px;
+}
+
+
+
+
 
 .contacto {
   background-color: #16a085;
