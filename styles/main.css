@@ -139,21 +139,16 @@ h2 {
 }
 
 .clientes img {
-    display: inline;
-    padding: 11px;
+  padding: 11px;
 }
 
-.clientes img:nth-child(1){
-    margin-left: 0px;
+.clientes img:nth-child(1) {
+  margin-left: 0px;
 }
 
-.clientes img:nth-child(4){
-    padding-right: 0px;
+.clientes img:nth-child(4) {
+  padding-right: 0px;
 }
-
-
-
-
 
 .contacto {
   background-color: #16a085;
