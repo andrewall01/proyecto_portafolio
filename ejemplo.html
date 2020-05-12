@@ -5,29 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        .flex{
-            display: inline-flex; /*ocupa solo el ancho del contenido de los elementos*/
-            display: flex; /**/
-            background: red;
-                }
+      .flex {
+        display: inline-flex; /*ocupa solo el ancho del contenido de los elementos*/
+        display: flex; /**/
+        background: red;
+      }
 
-        .flex div{
-            width: 40px;
-            height: 40px;
-            text-align: center;
-            color: white;
-            font-weight: bold;
+      .flex div {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+      }
 
-        }
+      .flex div:nth-child(even) {
+        background: green;
+      }
 
-        .flex div:nth-child(even){
-            background: green;
-        }
-
-        .flex div:nth-child(odd){
-            background: orange;
-        }
-
+      .flex div:nth-child(odd) {
+        background: orange;
+      }
     </style>
   </head>
   <body>
