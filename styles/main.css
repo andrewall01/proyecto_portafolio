@@ -96,8 +96,41 @@ h2 {
   font-size: 1.8rem;
 }
 
+/*Servicios*/
+
 .servicios {
   background-color: #fb7171;
+  width: 100%;
+}
+
+.servicios h2 {
+  padding: 30px;
+}
+
+.servicios h3 {
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.servicios .contenedor {
+  padding: 0 9% 70px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.servicios .grupo {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.servicios img {
+  padding-bottom: 5%;
 }
 
 /*Portafolio*/
@@ -129,9 +162,21 @@ h2 {
 
 .clientes h2 {
   padding: 36px 0 0px 0;
-  margin-bottom: 13px;
+  margin-bottom: 10px;
 }
 
+.clientes div {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.clientes img {
+  padding: 1.2%;
+}
+/*
 .clientes div {
   text-align: center;
   margin: auto;
@@ -148,8 +193,45 @@ h2 {
 
 .clientes img:nth-child(4) {
   padding-right: 0px;
-}
+}*/
+
+/*Contacto*/
 
 .contacto {
   background-color: #16a085;
+}
+
+.contacto h2 {
+  padding: 34px 0 26px 0;
+}
+
+.contacto form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 10%;
+}
+
+.contacto input {
+  display: flex;
+  width: 48%;
+  padding: 3%;
+  margin: 1%;
+}
+
+.contacto textarea {
+  width: 100%;
+  margin: 1%;
+  padding: 3%;
+  height: 10em;
+}
+
+.contacto button {
+  padding: 2% 5%;
+  margin-top: 1%;
+  margin-bottom: 5%;
+  background-color: #233451;
+  border-color: #233451;
+  color: white;
 }
