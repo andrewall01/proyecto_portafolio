@@ -375,7 +375,6 @@ main {
   /*globals*/
   h2 {
     font-size: 2.8rem;
-    color: indigo;
   }
 
   .skills,
@@ -482,7 +481,7 @@ main {
     margin-bottom: 6px;
   }
 
-    /*Servicios*/
+  /*Servicios*/
 
   .servicios .items {
     display: flex;
@@ -523,36 +522,36 @@ main {
     margin-bottom: 40px;
   }
 
-  .clientes .items{
+  .clientes .items {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .clientes .items div{
+  .clientes .items div {
     width: 61%;
     padding: 0 0 49px 0;
   }
 
   /*Contacto*/
 
-  .contacto h2{
+  .contacto h2 {
     margin-bottom: 32px;
   }
 
-  .contacto input{
+  .contacto input {
     width: 100%;
     margin: 0 12px 25px 12px;
     padding: 15px;
   }
 
-  .contacto textarea{
+  .contacto textarea {
     width: 100%;
     margin: 0 12px 39px 12px;
     padding: 15px;
   }
 
-  .contacto button{
+  .contacto button {
     width: 167px;
     height: 56px;
     font-weight: bold;
