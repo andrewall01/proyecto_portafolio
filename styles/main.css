@@ -4,13 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
-}
-main {
-  width: 100%;
-  max-width: 960px;
-  margin: auto;
 }
 
 body {
@@ -19,16 +15,33 @@ body {
 }
 
 h1 {
-  text-align: center;
-  font-size: 6.25rem;
+  font-size: 6.4rem;
+  font-weight: 900;
 }
 
 h2 {
-  text-align: center;
   font-size: 3.6rem;
 }
 
-/*codigo*/
+h3 {
+  font-size: 1.8 rem;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+/*Main*/
+
+main {
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+}
+
+/*Código*/
 
 .codigo {
   position: relative;
@@ -38,23 +51,25 @@ h2 {
   position: absolute;
   top: 46px;
   width: 100%;
+  text-align: center;
 }
 
 .codigo img {
-  display: block;
   width: 100%;
-}
-.codigo h2 {
-  position: absolute;
-  bottom: 130px;
-  left: 52px;
-  padding: 24px 24px 24px 17px;
-  background-color: rgba(114, 153, 254, 0.5);
-  line-height: 1.2;
-  text-align: left;
+  display: block;
 }
 
-/*skills*/
+.codigo h2 {
+  position: absolute;
+  bottom: 140px;
+  left: 52px;
+  padding: 24px 24px 24px 18px;
+  background-color: rgba(114, 153, 254, 0.5);
+  line-height: 1.3;
+}
+
+/*Skills*/
+
 .skills {
   background-color: #7299fe;
   padding: 40px 104px 60px;
@@ -85,18 +100,17 @@ h2 {
 
 .skills h3 {
   margin-bottom: 10px;
-  font-size: 1.8rem;
 }
 
 .skills .bar {
   height: 18px;
-  background-color: white;
+  background: white;
 }
 
 .skills .bar div {
   height: 100%;
-  background-color: black;
   width: 80%;
+  background: black;
 }
 
 /*.skills {
@@ -167,10 +181,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-.servicios h3 {
-  font-size: 1.8rem;
-}
-
 /*.servicios {
   background-color: #fb7171;
   width: 100%;
@@ -210,6 +220,33 @@ h2 {
 
 .portafolio {
   background-color: #ffd233;
+  padding: 44px 180px 86px;
+}
+
+.portafolio h2 {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.portafolio .flex {
+  display: flex;
+  flex-wrap: wrap;
+  /*justify-content: center;*/
+}
+
+.portafolio .flex div {
+  width: 25%;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+
+.portafolio img {
+  width: 100%;
+  display: block;
+}
+
+/*.portafolio {
+  background-color: #ffd233;
   padding: 42px 0 96px 0;
 }
 
@@ -225,14 +262,37 @@ h2 {
 .portafolio img {
   padding-bottom: 13px;
   padding-right: 11px;
-}
+}*/
 
 /*Clientes*/
 
 .clientes {
   background-color: #3f4e62;
+  text-align: center;
+  padding: 36px 68px 76px;
 }
 
+.clientes h2 {
+  margin-bottom: 20px;
+}
+
+.clientes .items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clientes .items div {
+  width: 25%;
+  padding: 0 10px;
+}
+
+.clientes img {
+  width: 100%;
+}
+
+/*
 .clientes h2 {
   padding: 36px 0 0px 0;
   margin-bottom: 10px;
@@ -272,44 +332,259 @@ h2 {
 
 .contacto {
   background-color: #16a085;
+  padding: 36px 100px 66px;
+  text-align: center;
 }
 
 .contacto h2 {
-  padding: 34px 0 26px 0;
+  margin-bottom: 30px;
 }
 
 .contacto form {
-  width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0 10%;
-}
-
-.contacto .texto {
-  padding: 6px;
-  width: 50%;
+  text-align: center;
 }
 
 .contacto input {
-  width: 100%;
-  height: 60px;
-  padding: 3px;
+  width: 49%;
+  padding: 20px 10px;
+  margin: 0px 5px 18px 0;
 }
 
 .contacto textarea {
-  width: 100%;
-  margin: 6px;
-  padding: 3px;
-  height: 10em;
+  width: 99%;
+  margin-bottom: 40px;
+  padding: 10px;
+  resize: none;
 }
 
 .contacto button {
-  padding: 2% 5%;
-  margin-top: 1%;
-  margin-bottom: 5%;
-  background-color: #233451;
-  border-color: #233451;
+  padding: 20px;
+  width: 166px;
   color: white;
+  background-color: #233451;
+  border: 1px solid #233451;
   text-align: center;
+  cursor: pointer;
 }
+
+/*TABLET*/
+@media (max-width: 860px) {
+  /*globals*/
+  h2 {
+    font-size: 2.8rem;
+    color: indigo;
+  }
+
+  .skills,
+  .servicios,
+  .portafolio,
+  .clientes,
+  .contacto {
+    padding: 40px;
+  }
+
+  /*banner*/
+  .codigo h2 {
+    right: 52px;
+    bottom: 40px;
+    text-align: center;
+  }
+
+  .skills {
+    background-color: green;
+  }
+}
+
+/*TABLET SMALL // CELLPHONES LARGE*/
+@media (max-width: 780px) {
+  /*globales*/
+  h1 {
+    color: red;
+    font-size: 4.4rem;
+  }
+
+  .skills {
+    background-color: red;
+  }
+}
+
+/*// CELLPHONES MEDIUM*/
+@media (max-width: 620px) {
+  /*Globales*/
+  .skills,
+  .servicios,
+  .portafolio,
+  .clientes,
+  .contacto {
+    padding: 20px;
+  }
+
+  /*Banner*/
+  .codigo h2 {
+    font-size: 2rem;
+    padding: 10px;
+    right: inherit;
+  }
+
+  /*My-Skills*/
+  .skills h2 {
+    margin-bottom: 10px;
+  }
+
+  .skills .item {
+    width: 100%;
+  }
+
+  .skills .item:nth-child(odd),
+  .skills .item:nth-child(even) {
+    padding: 0;
+  }
+}
+
+/*// CELLPHONES SMALL*/
+@media (max-width: 480px) {
+  /*globales*/
+
+  h2 {
+    font-size: 2.4rem;
+    color: white;
+    line-height: 2.1rem;
+  }
+
+  /*Banner*/
+
+  .codigo h1 {
+    color: white;
+    font-size: 3.2rem;
+    top: 7px;
+    left: 16px;
+    text-align: left;
+  }
+
+  .codigo h2 {
+    font-size: 1.8rem;
+    right: 50px;
+    bottom: 7px;
+    text-align: center;
+  }
+
+  /*Skills*/
+
+  .skills {
+    background-color: blue;
+  }
+
+  .skills h3 {
+    font-size: 1.4rem;
+    margin-bottom: 6px;
+  }
+
+    /*Servicios*/
+
+  .servicios .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servicios h3 {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+
+  .servicios .items div {
+    width: 100%;
+  }
+
+  /*Portafolio*/
+
+  .portafolio h2 {
+    margin-bottom: 20px;
+  }
+
+  .portafolio .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 42px;
+  }
+
+  .portafolio .flex div {
+    width: 100%;
+    margin-bottom: 34px;
+  }
+
+  /*Clientes*/
+
+  .clientes h2 {
+    margin-bottom: 40px;
+  }
+
+  .clientes .items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .clientes .items div{
+    width: 61%;
+    padding: 0 0 49px 0;
+  }
+
+  /*Contacto*/
+
+  .contacto h2{
+    margin-bottom: 32px;
+  }
+
+  .contacto input{
+    width: 100%;
+    margin: 0 12px 25px 12px;
+    padding: 15px;
+  }
+
+  .contacto textarea{
+    width: 100%;
+    margin: 0 12px 39px 12px;
+    padding: 15px;
+  }
+
+  .contacto button{
+    width: 167px;
+    height: 56px;
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+  }
+}
+
+/* 
+@media (max-width: 720px) {
+  .my-skills {
+    background: green;
+    padding: 50px;
+  }
+  .my-skills h2 {
+    margin-bottom: 10px;
+  }
+  .my-skills .item {
+    width: 100%;
+  }
+  .my-skills .item:nth-child(even),
+  .my-skills .item:nth-child(odd) {
+    padding: 0;
+  }
+}
+@media (max-width: 520px) {
+  .my-skills {
+    background: blue;
+  }
+}
+@media (max-width: 420px) {
+  .my-skills {
+    background: yellow;
+  }
+} */
